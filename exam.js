@@ -1,4 +1,4 @@
-(function () {
+document.addEventListener("DOMContentLoaded", function() {
   var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
   var helloSpeaker = {
@@ -27,9 +27,9 @@
 
     console.log(message);
 
-
+    // Crée un élément <li> et ajoute-le à la liste
     var listItem = document.createElement("li");
     listItem.textContent = message;
     outputList.appendChild(listItem);
   }
-})();
+});
